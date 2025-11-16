@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 255 255 255;
+  --fg: 17 24 39;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  color: rgb(var(--fg));
+  background: rgb(var(--bg));
+}
+
+.container {
+  @apply max-w-5xl mx-auto px-4;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.card {
+  @apply rounded-lg border p-4 shadow-sm bg-white;
+}
